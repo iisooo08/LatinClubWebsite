@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Tajawal:wght@200;300;400;500;700;800;900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset and basic styling */
+h1, p {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: #280003
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #EFE6DD;
+}
+
+
+.urbanist-heading {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-size: 10rem;
+  font-style: normal;
+  color: #280003;
+}
+
+.urbanist-semiheading {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 3rem;
+  font-style: normal;
+  color: #280003;
+  padding-top:0%;
+}
+.roboto-mono-semiheading {
+  font-family: "Roboto Mono";
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-style: normal;
+  color: #9c4f37;
+  padding-top:0%;
+}
+
+.roboto-text {
+  font-family: "Roboto Mono";
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-style: normal;
+}
+
+.urbanist-title {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-size: 5rem;
+  font-style: normal;
+  color: #280003;
+}
+
+.roboto-mono {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-style: normal;
+}
+
+/* Basic layout */
+header {
+  background-color: #EFE6DD;
+  padding: 2vw;
+  text-align: center;
+}
+
+/* Apply Urbanist style to header text */
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #273C2C;
+  padding: 1vw;
+  position: relative; /* Make the navbar expand */
+  transition: background-color 0.5s ease, padding 0.3s ease; /* smooth transition */
+}
+
+/* On hover, expand the background */
+nav:hover {
+  background-color: #273C2C; /* Darker background on hover */
+  padding: 5vw; /* Increase the padding to make the background expand */
+}
+
+/* Navbar links styling */
+nav a {
+  color: #EFE6DD;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  position: relative;
+  z-index: 1; /* Ensure links stay on top of the background */
+  margin-left: 5rem;
+  margin-right: 5rem;
+  transition: font-size 0.3s ease;
+}
+
+/* Increase font size when hovered */
+nav a:hover {
+  font-size: 1.5rem; /* Adjust to the desired font size when hovered */
+}
+
+main {
+  padding: 2vw;
+  font-size: 1.1rem;
+}
+
+footer {
+  background-color: #273C2C;
+  text-align: center;
+  padding: 1.5vw;
+  font-size: 0.9rem;
+  color: #EFE6DD;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    padding: 0.8rem 0;
+    font-size: 1rem;
+  }
+
+  main {
+    padding: 4vw;
+  }
+}
+
+.header-container {
+  display: flex !important;   /* Aligns vertically in the center */
+  justify-content: center;    /* Center the entire content */
+  gap: 10px;                  /* Space between the logos and the heading */
+  padding: 0;                 /* Remove padding if any */
+}
+
+.pillar-logo {
+  width: 13rem;                /* Adjust as needed */
+  height: auto;
+  padding: 0;                 /* Ensure no padding affects alignment */
+  display: inline-block;      /* Makes sure the images stay inline */
+}
+
+/* General Layout */
+.members-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 9rem;
+}
+
+/* Individual Member Card */
+/* General Layout */
+.members-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* Individual Member Card */
+.member-card {
+  background-color: #f5f0ed; /* Light background for contrast */
+  border-radius: 15px; /* Rounded corners */
+  padding: 1rem;
+  flex: 1 1 calc(33.333% - 1rem); /* 3 columns with responsive spacing */
+  box-sizing: border-box;
+  color:rgb(181, 110, 81);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .member-card {
+    flex: 1 1 calc(50% - 1rem); /* Switch to 2 columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .member-card {
+    flex: 1 1 100%; /* Single column on extra-small screens */
+  }
+}
+
+/* Font Styling */
+.urbanist-heading, .urbanist-title {
+  font-family: 'Urbanist', sans-serif;
+}
+
+.roboto-mono {
+  font-family: 'Roboto Mono', monospace;
+}
+
