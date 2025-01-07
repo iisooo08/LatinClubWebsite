@@ -14,6 +14,17 @@ body {
   background-color: #EFE6DD;
 }
 
+.article-text {
+  font-size: 1.5rem;
+  margin-left: 9rem;
+  margin-right: 9rem;
+}
+
+.article-image 
+{
+  text-align:center;
+}
+
 
 .urbanist-heading {
   font-family: "Urbanist", sans-serif;
@@ -58,6 +69,7 @@ body {
   font-size: 5rem;
   font-style: normal;
   color: #280003;
+  text-align:center;
 }
 
 .roboto-mono {
@@ -156,6 +168,20 @@ footer {
   height: auto;
   padding: 0;                 /* Ensure no padding affects alignment */
   display: inline-block;      /* Makes sure the images stay inline */
+}
+
+.comic-box {
+  width:40rem;
+  height:auto;
+  justify-content:center;
+  align-items:center;
+  display:flex;
+}
+
+.center {
+  justify-content:center;
+  align-items:center;
+  display:flex;
 }
 
 /* General Layout */
