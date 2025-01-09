@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Short Comics</title>
+  <link rel="stylesheet" href="clubweb_main.css">
+  <style>
+    /* Use Flexbox to center the content */
+    .center {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center horizontally */
+      justify-content: center; /* Center vertically (if needed) */
+      text-align: center;
+    }
+
+    .comic-box img {
+      width: 70%; /* Adjust the width to make the image smaller */
+      max-width: 80vh; /* Ensure it doesn't get too big on larger screens */
+      height: auto; /* Maintain aspect ratio */
+      margin-top:3vh;
+      margin-bottom:5vh;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="pillar_logo.png" alt="Pillar Logo" class="pillar-logo">
+    <h1 class="urbanist-heading">Short Comics</h1>
+    <img src="pillar_logo.png" alt="Pillar Logo" class="pillar-logo">
+  </header>
+
+  <nav class="roboto-mono">
+    <a href="short_comics.html">Back to Main</a>
+  </nav>
+
+  <main>
+    <h2 class="urbanist-title">December 2024 Comics Collection</h2>
+
+    <!-- Centered Comic Content -->
+    <div class="center">
+      <p class="urbanist-semiheading">What does SPQR mean?</p>
+      <div class="comic-box">
+        <img src="comic1.png" alt="Comic Image">
+      </div>
+      <p class="urbanist-semiheading">Did Romans speak in classical Latin?</p>
+      <div class="comic-box">
+        <img src="comic2.png" alt="Comic Image">
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+  </footer>
+
+</body>
+</html>
