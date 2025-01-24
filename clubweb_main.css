@@ -21,6 +21,15 @@ body {
   line-height:3rem;
   margin-bottom:4rem;
 }
+.citation-text {
+  font-size: 1.5rem;
+  margin-left: 12rem;
+  margin-right: 12rem;
+  line-height:3rem;
+  margin-bottom:4rem;
+  color:#9c4f37;
+  text-align:center;
+}
 
 .author-text{
   font-size:2rem;
