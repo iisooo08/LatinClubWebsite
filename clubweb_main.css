@@ -252,3 +252,25 @@ footer {
   font-family: 'Roboto Mono', monospace;
 }
 
+/* Gallery Styles */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50vh, 1fr)); /* Adjust grid item width to 20vh */
+  gap: 4vh; 
+  margin-top: 4vh; 
+}
+
+.gallery-item {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 2vh; /* Space above caption */
+  font-size: 2vh; /* Font size in vh */
+  color: #555;
+  font-family: 'Roboto Mono', monospace;
+}
+
