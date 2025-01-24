@@ -255,7 +255,7 @@ footer {
 /* Gallery Styles */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(50vh, 1fr)); /* Adjust grid item width to 20vh */
+  grid-template-columns: repeat(auto-fill, minmax(10vh, 1fr)); /* Adjust grid item width to 20vh */
   gap: 4vh; 
   margin-top: 4vh; 
 }
